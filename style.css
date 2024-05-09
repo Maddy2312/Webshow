@@ -141,3 +141,70 @@ nav{
         transform: translateX(-100%);
     }
 }
+#page2-bottom{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6vw;
+}
+#page2-bottom h1{
+    font-size: 3vw;
+    width: 60%;
+}
+#bottom-part2{
+    width: 30%;
+}
+#bottom-part2 img{
+    width: 30%;
+}
+#bottom-part2 p{
+    width: 90%;
+    font-weight: 600;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+}
+.elem{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+.elem h2{
+    font-size: 2vw;
+    font-weight: 600;
+    position: relative;
+    z-index: 9;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.4s;
+}
+.elem:hover .overlay{
+    top: 0%;
+}
+#fixed-image{
+    height: 30vw;
+    width: 24vw;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
